@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.2
+FROM ubuntu:14.04.1
 MAINTAINER Nhan Tran <tranphanquocnhan@gmail.com>
 
 RUN apt-get update
