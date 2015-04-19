@@ -17,7 +17,7 @@ RUN apt-get install -y libpq-dev
 
 RUN sed -i -e "s/#listen_addresses = 'localhost'/listen_addresses = '*'/g" /etc/postgresql/9.3/main/postgresql.conf
 RUN sed -i -e "s/local   all             all                                     peer/local   all             all                                     md5/g" /etc/postgresql/9.3/main/pg_hba.conf
-RUN echo "host    all             all             192.168.0.0/16            md5" >> /etc/postgresql/9.3/main/pg_hba.conf
+RUN echo "host    all             all             0.0.0.0/0            md5" >> /etc/postgresql/9.3/main/pg_hba.conf
 RUN cat /etc/postgresql/9.3/main/pg_hba.conf
 
 EXPOSE 5432
