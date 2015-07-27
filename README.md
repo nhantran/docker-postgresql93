@@ -4,7 +4,7 @@ You need to change the default storage driver before starting Docker daemon by u
 
       DOCKER_OPTS="--storage-driver=devicemapper"
 
-Update[7/27/2015]: Another work-around for this issue is using --no-cache option when issuing 'docker build' for building the image
+**Update[7/27/2015]**: Another work-around for this issue is using --no-cache option when issuing 'docker build' for building the image
 
 #### Usage
 This image should be used as a base image to build a PostgreSQL container
